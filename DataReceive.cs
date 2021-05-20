@@ -50,13 +50,12 @@ namespace socket_server
             if (Server.DebugLevel > 2) {
                 Convertion.Temp_PacketPrintHeader(packet);
                 Server.print(2, "CRC oK");
-            } // 디버그
+            }
 
-            if (units_ins != "a1" && !state.thru) { // 미인증 소켓이 다른 포맷을 전송할경우
+            if (units_ins != "a1" && !state.thru) {
                 if (Server.DebugLevel > 2) Server.print(2, Detail.get(state, Detail.TYPE.Addr) + " - proceed without approval.");
                 return false;
             }
-
 
             string[] data = new string[] { units_placeid, units_deviceid, Detail.get(state, Detail.TYPE.Addr), units_ins };
             Database.Charger.Record.LeaveDataRaw(false, data, packet, false);

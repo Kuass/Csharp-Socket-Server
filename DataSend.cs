@@ -13,7 +13,7 @@ namespace socket_server
             byte[] send_time = new byte[7];
             byte[] seq = new byte[2];
             byte[] type = new byte[1] { 0x06 };
-            byte[] placeid = new byte[8] { 0x4D, 0x4F, 0x44, 0x45, 0x52, 0x4E, 0x54, 0x31 };
+            byte[] placeid = new byte[8] { 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38 };
             byte[] deviceid = new byte[2] { 0x00, 0x01 };
             byte[] ins = new byte[2];
             byte[] ml = new byte[2];
@@ -35,12 +35,6 @@ namespace socket_server
             ins = Encoding.ASCII.GetBytes(data[0]);
             switch (data[0]) {
                 case "1a":
-                    VD = new byte[2] { Constants.VALUE.ACK, 0x00 };
-                    break;
-                case "1b":
-                    VD = new byte[2] { Constants.VALUE.ACK, 0x00 };
-                    break;
-                case "1c":
                     VD = new byte[2] { Constants.VALUE.ACK, 0x00 };
                     break;
             }
