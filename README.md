@@ -1,5 +1,5 @@
 # Base Socket Server
-Created with `C#` `Net Core 3.1`, i believe it will be the foundation of a powerful server application through your touch.
+Created with `C#` `.Net Core`, i believe it will be the foundation of a powerful server application through your touch.
 
 Reads and sends packet according to ASCII standards and disconnects socket connections that have not been authenticated after 30 seconds.
 a1 Socket connections that successfully received INS are not disconnected after 30 seconds, and the state structure manages data for each session.
