@@ -89,9 +89,6 @@ namespace socket_server
             listener.Bind(localEndPoint);
             listener.Listen(100);
             print(0, "Ready to Mog-Server");
-            byte[] SettingMasterKey = Encoding.ASCII.GetBytes("TestSocket-Server");
-            Convertion.Encrypt.ARIA.ARIAEngine.setMasterKey(SettingMasterKey);
-            print(0, "Setting MasterKey to `" + Convertion.ByteArrayToHexString(SettingMasterKey) + "`");
             print(0, "Waiting for Database Signal...");
             Database.startDatabase();
             print(0, "Database is Ready.");
