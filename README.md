@@ -24,13 +24,13 @@ Tail : CRC, ETX<br>
 <br>
 
 Build for ubuntu-18.04x64 : 
-  `dotnet build --no-restore --configuration Release --runtime ubuntu.18.04-x64 -p:ImportByWildcardBeforeSolution=false`
+  `dotnet build --configuration Release --runtime ubuntu.18.04-x64 -p:ImportByWildcardBeforeSolution=false`
 
 Build for linux-x64 : 
-  `dotnet build --no-restore --configuration Release --runtime linux-x64 -p:ImportByWildcardBeforeSolution=false`
+  `dotnet build --configuration Release --runtime linux-x64 -p:ImportByWildcardBeforeSolution=false`
 
 Build for Windows : 
-  `dotnet build --no-restore --configuration Release`
+  `dotnet build --configuration Release`
 
 ### Dependencies Packages
 - MySql.Data v8.0.22 (Nuget)
