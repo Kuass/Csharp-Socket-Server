@@ -9,7 +9,7 @@ a1 Socket connections that successfully received INS are not disconnected after 
 | Short Name   | STX | SendDT        | SEQ             | Type | PlaceID  | DeviceID  | INS  | ML             | VD   | CRC             | ETX      |
 | Length(byte) | 1   | 7             | 2               | 1    | 8        | 2         | 2    | 2              | N    | 2               | 1        |
 | Index        | 1   | 8             | 10              | 11   | 19       | 21        | 23   | 25             | N    | 25+N+1          | 25+N+1+1 |
-| Format       | ASCII | BCD           | byte            | byte | byte     | byte      | byte | byte           |      | byte            | ASCII      |
+| Format       | ASCII | BCD           | HEX            | HEX | HEX     | HEX      | HEX | HEX           |      | HEX            | ASCII      |
 
 Header : STX, SendDT, SEQ, Type, PlaceID, DeviceID, INS, ML<br>
 Body : VD<br>
